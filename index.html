@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pets do Vidas — ONG de Resgate Animal</title>
+  <meta name="description" content="ONG Pets do Vidas — resgate, cuidado e adoção responsável de animais." />
+  <style>
+    :root {
+      --verde: #2e9e6b;
+      --verde-escuro: #1f7a51;
+      --laranja: #ff914d;
+      --texto: #2b2b2b;
+      --cinza: #f4f6f5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+
+    /* Cabeçalho */
+    header {
+      background: var(--verde);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    header .logo { font-weight: 700; font-size: 1.25rem; }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-weight: 500;
+    }
+    header nav a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--verde) 0%, var(--verde-escuro) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem; }
+    .btn {
+      display: inline-block;
+      background: var(--laranja);
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+
+    /* Seções */
+    section { padding: 3.5rem 1.5rem; max-width: 1000px; margin: 0 auto; }
+    section h2 {
+      text-align: center;
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
+      color: var(--verde-escuro);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--cinza);
+      border-radius: 14px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .card .emoji { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+    .card h3 { margin-bottom: 0.5rem; color: var(--verde-escuro); }
+
+    /* Adoção */
+    .pets {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .pet {
+      border: 1px solid #e3e6e5;
+      border-radius: 14px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .pet .foto {
+      font-size: 3.5rem;
+      background: var(--cinza);
+      padding: 2rem 0;
+    }
+    .pet .info { padding: 1rem; }
+    .pet h3 { color: var(--verde-escuro); }
+
+    /* CTA */
+    .cta {
+      background: var(--cinza);
+      text-align: center;
+    }
+
+    /* Rodapé */
+    footer {
+      background: var(--verde-escuro);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    footer a { color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🐾 Pets do Vidas</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#ajudar">Como Ajudar</a>
+      <a href="#adotar">Adotar</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Cada vida importa 🐶🐱</h1>
+    <p>Somos uma ONG dedicada ao resgate, cuidado e adoção responsável de animais abandonados. Junte-se a nós!</p>
+    <a href="#ajudar" class="btn">Quero Ajudar</a>
+  </div>
+
+  <section id="sobre">
+    <h2>Quem Somos</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto;">
+      A <strong>Pets do Vidas</strong> nasceu do amor pelos animais. Resgatamos cães e gatos em
+      situação de risco, oferecemos cuidados veterinários, abrigo e muito carinho até encontrarmos
+      um lar para sempre. Tudo isso graças a voluntários e doadores como você.
+    </p>
+  </section>
+
+  <section id="ajudar" style="background:var(--cinza); max-width:100%;">
+    <div style="max-width:1000px; margin:0 auto;">
+      <h2>Como Ajudar</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="emoji">💰</span>
+          <h3>Doe</h3>
+          <p>Sua contribuição garante ração, vacinas e tratamento para os resgatados.</p>
+        </div>
+        <div class="card">
+          <span class="emoji">🙋</span>
+          <h3>Seja Voluntário</h3>
+          <p>Ajude nos resgates, eventos de adoção e cuidados diários.</p>
+        </div>
+        <div class="card">
+          <span class="emoji">🏠</span>
+          <h3>Lar Temporário</h3>
+          <p>Acolha um animalzinho até que ele encontre uma família definitiva.</p>
+        </div>
+        <div class="card">
+          <span class="emoji">📢</span>
+          <h3>Divulgue</h3>
+          <p>Compartilhe nossa causa e ajude mais animais a serem adotados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="adotar">
+    <h2>Adote um Amigo</h2>
+    <div class="pets">
+      <div class="pet">
+        <div class="foto">🐕</div>
+        <div class="info"><h3>Thor</h3><p>2 anos • Dócil e brincalhão</p></div>
+      </div>
+      <div class="pet">
+        <div class="foto">🐈</div>
+        <div class="info"><h3>Mel</h3><p>1 ano • Carinhosa e calma</p></div>
+      </div>
+      <div class="pet">
+        <div class="foto">🐩</div>
+        <div class="info"><h3>Luna</h3><p>3 anos • Companheira fiel</p></div>
+      </div>
+      <div class="pet">
+        <div class="foto">🐱</div>
+        <div class="info"><h3>Simba</h3><p>6 meses • Cheio de energia</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="cta" style="max-width:100%;">
+    <div style="max-width:700px; margin:0 auto;">
+      <h2>Fale Conosco</h2>
+      <p>Quer adotar, doar ou ser voluntário? Entre em contato!</p>
+      <p style="margin:1.5rem 0;">
+        📧 <a href="mailto:contato@petsdovidas.org">contato@petsdovidas.org</a><br />
+        📱 (00) 90000-0000<br />
+        📍 Rua dos Animais, 123 — Sua Cidade
+      </p>
+      <a href="mailto:contato@petsdovidas.org" class="btn">Enviar Mensagem</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>🐾 Pets do Vidas — ONG de Resgate Animal</p>
+    <p style="margin-top:0.5rem; opacity:0.8;">Página de teste • © 2026</p>
+  </footer>
+</body>
+</html>
